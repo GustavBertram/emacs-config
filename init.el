@@ -60,7 +60,7 @@
 ;; Package settings
 (load "org-config.el")
 (load "babel-config.el")
-(load "common-lisp-config.el")
+(load "cl-config.el")
 (load "clojure-config.el")
 
 
