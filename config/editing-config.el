@@ -16,6 +16,9 @@
 ;; Hide startup screen
 (setq inhibit-startup-screen t)
 
+;; Hide scratch message
+(setq initial-scratch-message nil)
+
 ;; Enable copy and pasting from clipboard
 (setq x-select-enable-clipboard t)
 
