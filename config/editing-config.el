@@ -9,6 +9,9 @@
 ;; Use spaces instead of tabs
 (setq indent-tab-mode nil)
 
+;; Show column numbers
+(setq column-number-mode t)
+
 ;; Highlight parens
 (setq show-paren-delay 0)
 (show-paren-mode 1)
