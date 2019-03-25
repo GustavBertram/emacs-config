@@ -27,3 +27,6 @@
 
 ;; Set the font
 ; (set-frame-font "Source Code Pro") 
+
+;; Hide the toolbar
+(tool-bar-mode -1)
