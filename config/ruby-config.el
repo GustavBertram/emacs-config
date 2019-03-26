@@ -35,5 +35,14 @@
   (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
   (add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby")))
 
+;;; PROJECTILE
+(unless (package-installed-p 'projectile)
+  (package-install 'projectile))
+
+(use-package projectile
+  :bind-keymap
+  ("C-x p" . projectile-command-map)
+  :config
+  (projectile-mode +1))
 
 
