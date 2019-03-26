@@ -1,6 +1,7 @@
 ;;; PACKAGE SETUP
 
 (require 'package)
+(setq package-enable-at-startup nil)
 
 ;; Define package repositories
 ;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -12,6 +13,10 @@
 ;; This also sets the load path.
 (package-initialize)
 
+;; Auto-install use-package
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
 ;;; CUSTOM VARIABLES
 
