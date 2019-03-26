@@ -65,6 +65,7 @@
 ;; Package settings
 (load "org-config.el")
 (load "babel-config.el")
+(load "git-config.el")
 ;(load "cl-config.el")
 ;(load "clojure-config.el")
 (load "ruby-config.el")
