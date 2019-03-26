@@ -5,7 +5,7 @@
 ;;; EDITOR SETTINGS
 
 ;; Show line numbers
-;(global-linum-mode)
+(global-linum-mode)
 
 ;; Autoclose paired syntax elements like parens, quotes, etc
 ;(add-hook 'ruby-mode-hook 'ruby-electric-mode)
@@ -27,12 +27,13 @@
 
 
 ;;; DASH
+(use-package dash-at-point
+  :bind
+  ("\C-c d" . dash-at-point)
 
-(require 'dash-at-point)
+  :init
+  (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
+  (add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby")))
 
-(autoload 'dash-at-point "dash-at-point"
-            "Search the word at point with Dash." t nil)
 
-(global-set-key "\C-cd" 'dash-at-point)
 
-(add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby"))
