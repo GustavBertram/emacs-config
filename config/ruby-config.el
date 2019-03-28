@@ -25,15 +25,15 @@
 ;; use rvm's default ruby for the current Emacs session
 ;(rvm-use-default) 
 
-
 ;;; DASH
-(use-package dash-at-point
-  :bind
-  ("\C-c d" . dash-at-point)
-
-  :init
-  (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
-  (add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby")))
+(if (eq system-type 'darwin)
+    (use-package dash-at-point
+      :bind
+      ("\C-c d" . dash-at-point)
+      
+      :init
+      (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
+      (add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby"))))
 
 ;;; PROJECTILE
 (unless (package-installed-p 'projectile)

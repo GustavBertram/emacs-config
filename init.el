@@ -35,7 +35,7 @@
  )
 
 ;; Theme
-(load-theme 'tango)
+(load-theme 'tango-dark)
 
 ;;; SETTINGS
 
