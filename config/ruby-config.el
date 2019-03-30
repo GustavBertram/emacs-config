@@ -5,7 +5,7 @@
 ;;; EDITOR SETTINGS
 
 ;; Show line numbers
-(global-linum-mode)
+;(global-linum-mode)
 
 ;; Autoclose paired syntax elements like parens, quotes, etc
 ;(add-hook 'ruby-mode-hook 'ruby-electric-mode)
@@ -20,10 +20,10 @@
 ;;; RVM
 
 ;; rvm.el - https://github.com/senny/rvm.el
-;(require 'rvm)
+(require 'rvm)
 
 ;; use rvm's default ruby for the current Emacs session
-;(rvm-use-default) 
+(rvm-use-default) 
 
 ;;; DASH
 (if (eq system-type 'darwin)
@@ -35,14 +35,5 @@
       (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
       (add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby"))))
 
-;;; PROJECTILE
-(unless (package-installed-p 'projectile)
-  (package-install 'projectile))
-
-(use-package projectile
-  :bind-keymap
-  ("C-x p" . projectile-command-map)
-  :config
-  (projectile-mode +1))
 
 
