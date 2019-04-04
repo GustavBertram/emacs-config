@@ -4,5 +4,5 @@
 (use-package helm
   :bind
   (("M-x" . helm-M-x)
-   ("s-f" . helm-projectile-ag)
-   ("s-t" . helm-projectile-find-file-dwim)))
+   ("s-t" . helm-projectile-ag) ; search Text
+   ("s-f" . helm-projectile-find-file-dwim))) ; find File
