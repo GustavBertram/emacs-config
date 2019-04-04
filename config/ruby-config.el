@@ -18,12 +18,11 @@
 
 
 ;;; RVM
+(use-package rvm
+  :ensure t
+  :config
+  (rvm-use-default))
 
-;; rvm.el - https://github.com/senny/rvm.el
-(require 'rvm)
-
-;; use rvm's default ruby for the current Emacs session
-(rvm-use-default) 
 
 ;;; DASH
 (if (eq system-type 'darwin)
@@ -36,4 +35,14 @@
       (add-to-list 'dash-at-point-mode-alist '(ruby-mode . "ruby"))))
 
 
+;;; ROBE
+(use-package robe
+  :ensure t
 
+  :init
+  (add-hook 'ruby-mode-hook 'robe-mode)
+
+  :config
+  (defadvice inf-ruby-console-auto
+    (before activate-rvm-for-robe activate)
+    (rvm-activate-corresponding-ruby)))  
