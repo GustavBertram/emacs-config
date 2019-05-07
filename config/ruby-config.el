@@ -10,6 +10,9 @@
 ;; Autoclose paired syntax elements like parens, quotes, etc
 ;(add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
+;; Set Ruby indent mode
+(setq ruby-indent-level 2)
+
 ;; Set up Ruby file extensions
 (add-to-list 'auto-mode-alist
              '("\\.\\(?:cap\\|gemspec\\|irbrc\\|gemrc\\|rake\\|rb\\|ru\\|thor\\)\\'" . ruby-mode))
