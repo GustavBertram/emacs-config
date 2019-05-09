@@ -7,7 +7,7 @@
       c-basic-offset 2)
 
 ;; Use spaces instead of tabs
-(setq indent-tab-mode nil)
+(setq-default indent-tab-mode nil)
 
 ;; Show column numbers
 (setq column-number-mode t)
