@@ -5,6 +5,8 @@
   (("C-c l" . org-store-link)
    ("C-c a" . org-agenda))
   :config
+  (setq org-todo-keywords
+        '((sequence "TODO" "DOING" "DONE")))
   (setq org-log-done t)
   (setq org-hide-leading-stars t)
   (setq org-odd-levels-only t)
