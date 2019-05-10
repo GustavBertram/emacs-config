@@ -49,3 +49,9 @@
   (defadvice inf-ruby-console-auto
     (before activate-rvm-for-robe activate)
     (rvm-activate-corresponding-ruby)))  
+
+;;; RUBOCOP
+(use-package rubocop
+  :ensure t
+  :init
+  (add-hook 'ruby-mode-hook 'rubocop-mode))
