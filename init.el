@@ -41,6 +41,10 @@
 
 (add-to-list 'load-path "~/.emacs.d/config/")
 
+;; Add to path on mac
+(if (eq system-type 'darwin)
+    (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin")))
+
 ;; Emacs settings
 (load "editing-config.el")
 (load "backup-config.el")
