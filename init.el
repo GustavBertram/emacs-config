@@ -48,6 +48,7 @@
 ;; Emacs settings
 (load "editing-config.el")
 (load "backup-config.el")
+(load "editorconfig.el")
 
 ;; Package settings
 (load "org-config.el")
@@ -56,6 +57,7 @@
 (load "ruby-config.el")
 (load "project-config.el")
 (load "common-lisp-config.el")
+(load "yafolding.el")
 ;(load "clojure-config.el")
 
 
