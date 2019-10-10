@@ -48,7 +48,7 @@
 ;; Emacs settings
 (load "editing-config.el")
 (load "backup-config.el")
-(load "editorconfig.el")
+(load "editorconfig-config.el")
 
 ;; Package settings
 (load "org-config.el")
