@@ -38,4 +38,7 @@
                  "%b"))))
 
 ;; Enable MoveText
-(move-text-default-bindings)
+(use-package move-text
+  :ensure t
+  :config
+  (move-text-default-bindings))
