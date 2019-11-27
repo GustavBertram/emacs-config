@@ -31,8 +31,11 @@
 ;; Hide the toolbar
 (tool-bar-mode -1)
 
-; Show full filename in title bar
+;; Show full filename in title bar
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
+
+;; Enable MoveText
+(move-text-default-bindings)
