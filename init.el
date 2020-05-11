@@ -54,10 +54,10 @@
 (load "org-config.el")
 (load "babel-config.el")
 (load "git-config.el")
-(load "ruby-config.el")
+;(load "ruby-config.el")
 (load "project-config.el")
 (load "common-lisp-config.el")
-(load "yafolding.el")
+(load "yafolding-config.el")
 ;(load "clojure-config.el")
 
 
