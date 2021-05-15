@@ -16,3 +16,5 @@
 	      "~/org/management"
 	      "~/org/meetings"
 	      "~/org/notes")))
+
+(use-package org-link-minor-mode)

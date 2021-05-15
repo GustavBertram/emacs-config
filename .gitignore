@@ -3,3 +3,5 @@ auto-save-list/
 .DS_Store
 transient/
 projectile-bookmarks.eld
+eln-cache/
+session.*

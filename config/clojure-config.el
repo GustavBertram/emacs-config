@@ -1,7 +1,7 @@
 ;;; CLOJURE 
 
 ;; From: https://github.com/clojure-emacs/clj-refactor.el
-(require 'clj-refactor)
+(use-package clj-refactor)
 
 (defun my-clojure-mode-hook ()
     (clj-refactor-mode 1)

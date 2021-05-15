@@ -22,6 +22,9 @@
 ;; Hide scratch message
 (setq initial-scratch-message nil)
 
+;; Hide the toolbar
+(setq tool-bar-mode nil)
+
 ;; Enable copy and pasting from clipboard
 (setq x-select-enable-clipboard t)
 
