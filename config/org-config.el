@@ -18,3 +18,14 @@
 	      "~/org/notes")))
 
 (use-package org-link-minor-mode)
+
+;;; LaTeX preview
+
+;; References: https://orgmode.org/worg/org-tutorials/org-latex-preview.html
+
+;; Machine setup
+;; sudo apt install texlive-latex-base texlive-latex-extra dvipng
+
+;; Scale up rendered snippets
+(plist-put org-format-latex-options :scale 1.5)
+
