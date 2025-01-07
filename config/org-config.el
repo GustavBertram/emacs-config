@@ -15,9 +15,12 @@
 	      "~/org/learning"
 	      "~/org/management"
 	      "~/org/meetings"
-	      "~/org/notes")))
+	      "~/org/notes"))
+  (setq org-format-latex-options
+        (plist-put org-format-latex-options
+                   :scale 2)))
 
-(use-package org-link-minor-mode)
+;(use-package org-link-minor-mode)
 
 ;;; LaTeX preview
 
@@ -27,5 +30,5 @@
 ;; sudo apt install texlive-latex-base texlive-latex-extra dvipng
 
 ;; Scale up rendered snippets
-(plist-put org-format-latex-options :scale 1.5)
+;(plist-put org-format-latex-options :scale 1.5)
 
